@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Al Milgrom</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fef385; /* Lightest brand color for the main background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                [Al Milgrom]
+            </h1>
+            <!-- Primary Gold Accent -->
+            <p class="text-[#e89b23] mt-1">Artist & Writer Profile</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/ne8JkpX.jpeg" 
+                        alt="Profile image of Al Milgrom" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+                <!-- TIP: Replace the 'src' above with a direct link to a professional photo of the person -->
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">March 6, 1950</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Artist, Writer, Editor</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1972</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Avengers</span></li>
+                                <li><span id="work-2">Secret Wars II</span></li>
+                                <li><span id="work-3">Spectacular Spider-Man</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: PASTE YOUR BIOGRAPHY CONTENT HERE --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        **Al Milgrom is an American comic book creator renowned for his extensive work as an artist, writer, and editor, primarily for Marvel Comics. Born in Detroit, Michigan, on March 6, 1950, he graduated from the University of Michigan with a degree in art and design in 1972 before beginning his comics career as an assistant to inker Murphy Anderson. Milgrom quickly moved into penciling and inking for various publishers like Charlton Comics and Warren Publishing before joining Marvel, where he would establish his long-standing career.
+                    </p>
+                    <p>
+                        **Milgrom's career spans numerous key roles, highlighting his versatility in the industry. As an artist, he gained prominence penciling Captain Marvel in the mid-70s, and later had notable runs as the penciler on The Avengers, the four-year stint on West Coast Avengers, and drawing the landmark crossover event Secret Wars II (1985–86). He is also known for his long involvement as a writer, penciler, and inker on Peter Parker, The Spectacular Spider-Man, where he co-created characters like the villain the Spot. Milgrom is also the co-creator of the DC Comics hero Firestorm with writer Gerry Conway during a brief editorial stint at DC in the late 1970s.
+                    </p>
+                    <p>
+                        **His work as an inker and editor is also substantial. Milgrom served as a Marvel Comics editor starting in 1979 and famously edited the anthology series Marvel Fanfare for its entire ten-year run. As an inker, he was prolific across the Marvel line, serving an eight-year stint as the inker on X-Factor and frequently collaborating with penciler Jim Starlin on various projects, often under the joint signature "Gemini." Milgrom has also contributed his talents to Archie Comics and continues to freelance in the industry, maintaining a reputation as a highly experienced and enduring figure in comic book history.
+                    </p>
+                    <p>
+                        **Check out this clip for some behind-the-scenes stories: Comic Legend Al Milgrom Interview- From Avengers to X-Factor. Behind the Scenes Stories!. https://www.youtube.com/watch?v=X5OMOcMlFJE
+                    </p>
+                </div>
+                
+                <!-- --- END: PASTE YOUR BIOGRAPHY CONTENT HERE --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at lootzcollectibles@gmail.com.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
