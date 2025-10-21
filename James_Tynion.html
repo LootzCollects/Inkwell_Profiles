@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | James Tynion IV</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                JAMES TYNION IV
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to "Comic Book Professional" -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/XdOCMhj.png" 
+                        alt="Profile image of James Tynion IV" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">December 14, 1987 (New York, NY)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Writer, Co-Creator, Publisher</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">2012 (Batman back-up stories)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Something is Killing the Children</span></li>
+                                <li><span id="work-2">Batman / Detective Comics</span></li>
+                                <li><span id="work-3">The Nice House on the Lake</span></li>
+                                <li><span id="work-4">The Woods / Memetic</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        James Tynion IV is an Eisner Award-winning, *New York Times* best-selling writer who has quickly become one of the most influential voices in modern comics, especially in the horror and mystery genres. After studying creative writing under Scott Snyder, Tynion began his career at DC Comics co-writing backup features for *Batman* and soon became a core writer on the Bat-titles, notably co-creating modern characters like **Punchline** and **Ghost-Maker**. He also wrote the acclaimed *Batman/Teenage Mutant Ninja Turtles* crossover trilogy and a massive run on *Detective Comics* during the Rebirth era.
+                    </p>
+                    <p>
+                        Tynion's influence is strongest in the creator-owned space, where his personal fears and anxieties shape the foundation of what has been dubbed the "Tynion Universe." Early work like *The Woods* (2014) established a blueprint for his themes—melding horror with character-driven adventure. His breakthrough mega-hit, *Something is Killing the Children* (2019), co-created with Werther Dell'Edera, launched the "Slaughterverse" and became one of the biggest independent successes of the decade. This success allowed Tynion to move away from exclusive work-for-hire to focus almost entirely on creator-owned projects, including hits like *The Nice House on the Lake* and *The Department of Truth*.
+                    </p>
+                    <p>
+                        He is noted for his commitment to long-form storytelling and has leveraged his audience success to launch **Tiny Onion**, his own publishing and newsletter venture, pioneering new models for creator-to-fan engagement within the industry.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Decade of Creator-Owned Commentary</h3>
+                    <!-- Video description -->
+                    <p class="mb-6 text-gray-700">In this panel celebrating his decade with BOOM! Studios, James Tynion IV discusses finding his authentic voice in comics and pushing back against editorial constraints he felt while writing superhero books:</p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>**The Woods Blueprint:** He considers *The Woods* (his first ongoing series) the fundamental blueprint for all his creator-owned work, built from his core fears and insecurities from his high school years.</li>
+                        <li>***Something is Killing the Children*:** The series began as five intended one-shots, but quickly evolved when he saw artist Werther Dell'Edera's design for **Erica Slaughter** (including the iconic bandanna) and tapped into a deeper story about a protagonist struggling against a failing system. He states the book is designed to run for **100 issues**.</li>
+                        <li>**Pushing Boundaries:** Tynion recalls being told in superhero comics not to use dense page spreads or unconventional naming practices. *Something is Killing the Children* was a deliberate rejection of those rules, using dense spreads and withholding Erica Slaughter's name until issue #3.</li>
+                        <li>**Long-Form Commitment:** He emphasizes the joy of creating long-running, long-form serials, hoping the industry will support more series that go for many volumes, providing a constant on-ramp for new readers to discover stories.</li>
+                    </ul>
+
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID t3aBd1RZM3s and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/t3aBd1RZM3s" 
+                            title="BOOM! Direct: A Decade with James Tynion IV" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
