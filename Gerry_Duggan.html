@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Gerry Duggan</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                GERRY DUGGAN
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to "Comic Book Professional" -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/1xRDcPT.jpeg" 
+                        alt="Profile image of Gerry Duggan" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">1973 (New York City, U.S.)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Writer, Director, Photographer</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1999 (Professional Work)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Deadpool (2012-2017)</span></li>
+                                <li><span id="work-2">X-Men / Marauders</span></li>
+                                <li><span id="work-3">Invincible Iron Man / Hulk</span></li>
+                                <li><span id="work-4">Dead Eyes / Falling In Love on the Path to Hell (Image)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        Gerry Duggan is a prolific American writer, director, and photographer known for bringing a blend of sharp comedy, high-octane action, and unexpected emotional depth to mainstream superhero comics. A graduate of Emerson College, Duggan developed his storytelling skills across various media before making a major impact on the comic book industry. He is recognized for taking on established, sometimes chaotic, characters and grounding them with compelling arcs.
+                    </p>
+                    <p>
+                        He rose to prominence with his foundational work at Marvel, notably co-writing a lengthy and highly popular run on *Deadpool* starting in 2012, cementing his ability to balance farce with tragedy. His career features extensive work across the Marvel Universe, including fan-favorite runs on *Hulk*, *Invincible Iron Man*, and *Savage Avengers*. Duggan became a pivotal voice in the X-Men franchise, contributing significantly to the current Krakoan era through titles like *Marauders* and the flagship *X-Men* series, where he often focuses on the high-stakes politics and swashbuckling adventures of the mutant world.
+                    </p>
+                    <p>
+                        Beyond work-for-hire, Duggan maintains a strong presence in the creator-owned space, often partnering with Image Comics on diverse projects like the hit crime drama *Dead Eyes* and the ongoing romantic series *Falling In Love on the Path to Hell*. This willingness to take creative risks and pivot between huge corporate properties and smaller, character-driven projects is a defining trait of his career.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description -->
+                    <p class="mb-6 text-gray-700">In this interview, Gerry Duggan discusses his approach to blending comedy and drama in his writing. He talks about his upcoming relaunch of *West Coast Avengers* and the narrative opportunities provided by working on a major ensemble book. Duggan shares insights into balancing his corporate work on books like *X-Men* and *Invincible Iron Man* with his personal projects, citing *Falling In Love on the Path to Hell* and *Dead Eyes: The Empty Frames* as examples of where he takes creative chances. He also mentions the creation of his photography book, *Timing/Luck*, demonstrating his broad creative interests outside of comic scripting.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID G3-HVvzuV6E and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/G3-HVvzuV6E" 
+                            title="51: Gerry Duggan on West Coast Avengers, his Image Comics books & taking creative risks | Cult House" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
