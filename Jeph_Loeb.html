@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Jeph Loeb</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                JEPH LOEB
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to "Comic Book Professional" -->
+            <p class="text-[#e89b23] mt-1">Writer, Producer & Executive</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/vla3al1.jpeg" 
+                        alt="Profile image of Jeph Loeb" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">January 29, 1958 (New York, U.S.)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Writer (Comics, Film, TV), Executive Producer</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1985 (Teen Wolf Film) / 1991 (Comic: Challengers of the Unknown)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Batman: The Long Halloween</span></li>
+                                <li><span id="work-2">Superman for All Seasons</span></li>
+                                <li><span id="work-3">Daredevil: Yellow, Spider-Man: Blue</span></li>
+                                <li><span id="work-4">Head of Marvel Television (2010-2019)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        Jeph Loeb is an Emmy and Eisner Award-winning American writer who has achieved major success across film, television, and comic books. After graduating from Columbia University Film School, he moved to Hollywood, where his screenwriting career quickly launched with the hits *Teen Wolf* (1985) and *Commando* (1985). This success led to a project writing a film for The Flash. When that film was ultimately shelved, DC Comics publisher Jeanette Khan invited him to write comics instead, a moment Loeb humorously compares to Santa arriving in July.
+                    </p>
+                    <p>
+                        This pivot led to his foundational comic book career, defined by his decades-long partnership with the late artist **Tim Sale** on iconic "color" miniseries like *Daredevil: Yellow*, *Spider-Man: Blue*, and *Hulk: Gray*. For DC, the duo redefined the Batman and Superman myths with classics like *Batman: The Long Halloween* and *Superman for All Seasons*. His later work included the blockbuster *Batman: Hush* with Jim Lee. From 2010 to 2019, Loeb transitioned to a major executive role as the Head of Marvel Television, overseeing the creation of 14 live-action and animated series, including *Agents of S.H.I.E.L.D.* and the acclaimed Netflix shows like *Daredevil*.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Comics, TV, and the Joy of Fan Connection</h3>
+                    <!-- Video summary paragraph -->
+                    <p class="mb-6 text-gray-700">In this interview, Jeph Loeb discusses his "lucky" career path, moving from Hollywood screenwriter (writing *Teen Wolf* at age 23) to comic book writer, a job he found "much more exciting than writing movies." He recounts meeting his long-time collaborator Tim Sale at San Diego Comic-Con in 1989 after every other artist rejected his pitch for *Challengers of the Unknown*, noting that Sale was simply "the only guy that said yes." He details his later transition to television, working on acclaimed shows like *Smallville*, *Lost*, and *Heroes*, before being personally invited by Marvel (post-Disney acquisition) to create and run their new television division, resulting in hits like the Netflix series. Loeb emphasizes that the most meaningful part of his convention appearances, which he only recently resumed after a ten-year hiatus, is the direct, emotional connection with fans, who often share that his work, such as *Batman: The Long Halloween*, was the first comic they ever read or a story they shared with their children.</p>
+
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID lsVC76XCn_I and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/lsVC76XCn_I" 
+                            title="Jeph Loeb interview" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
