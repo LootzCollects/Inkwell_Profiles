@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Javier Garrón</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                JAVIER GARRÓN
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to "Comic Book Professional" -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/Uz6gnid.jpeg" 
+                        alt="Profile image of Javier Garrón" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">El Puerto de Santa María, Spain</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Penciller, Designer, Concept Artist</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">2014 (DC Comics)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Miles Morales: Spider-Man</span></li>
+                                <li><span id="work-2">Avengers (w/ Jason Aaron)</span></li>
+                                <li><span id="work-3">Ant-Man & The Wasp</span></li>
+                                <li><span id="work-4">Marvel's Spider-Man: Miles Morales (Game)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        Javier Garrón is a Spanish artist who studied architecture before dedicating himself to comic book illustration, quickly rising to prominence for his dynamic, expressive, and detailed superhero art. After early work at DC Comics on titles like *Batgirl* and *Batman Eternal*, he became an exclusive artist for Marvel, where he was designated a "Young Gun" (2018-2019) for his potential. Garrón is celebrated for his unique ability to balance explosive action with highly relatable, human emotion in large-scale narratives.
+                    </p>
+                    <p>
+                        He is best known for relaunching the *Miles Morales: Spider-Man* series with Saladin Ahmed, a critical run that further defined the character's voice for a new generation. Following this, he became the rare consistent main artist for three years on the flagship *Avengers* title with writer Jason Aaron, solidifying his reputation as a powerhouse sequential storyteller. Garrón's influence extends into other media, having contributed character designs to the **Marvel's Spider-Man: Miles Morales** video game and creating illustrations for *Fortnite*.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Miles Morales & The Future of Spider-Man</h3>
+                    <!-- Video summary paragraph -->
+                    <p class="mb-6 text-gray-700">During this NYCC 2018 interview, Javier Garrón discusses the enormous commitment and unique artistic challenges of drawing *Miles Morales: Spider-Man*. He explains that while Peter Parker represents the parallel development of superhero and fan over decades, Miles embodies **hope and the future**, offering a fresh, "innocent" perspective that appeals to new audiences. Garrón emphasizes that drawing Miles, who is still a teenager, requires a specific, leaner body language and expression. He praises writer Saladin Ahmed for crafting thoughtful scripts that are open to collaboration and pay careful attention to both intimate character emotions and the timing of large action set-pieces, confirming that drawing the series has been a dream come true.</p>
+
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID mYlmv1V5H4M and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/mYlmv1V5H4M" 
+                            title="Artist Javier Garrón talks Miles Morales and the future of Spider-Man at NYCC 2018" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
