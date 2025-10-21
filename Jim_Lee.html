@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Jim Lee</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                JIM LEE
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to "Comic Book Professional" -->
+            <p class="text-[#e89b23] mt-1">Artist, Publisher, and Chief Creative Officer of DC</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/15sHUyW.jpeg" 
+                        alt="Profile image of Jim Lee" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">August 11, 1964 (Seoul, South Korea)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Penciller, Designer, Publisher</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1987 (*Alpha Flight* #51)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">*X-Men* #1 (1991)</span></li>
+                                <li><span id="work-2">WildC.A.T.s & Gen¹³</span></li>
+                                <li><span id="work-3">Batman: Hush</span></li>
+                                <li><span id="work-4">DC's The New 52 Initiative</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        Jim Lee is one of the most recognizable and influential artists in modern comics, known for his **hyper-detailed, dynamic, and muscular** style that defined an era. Born in South Korea, he initially pursued a career in medicine to honor his father, graduating with a degree in psychology from Princeton before deciding to take a year off to pursue his true passion: comic book art. His breakthrough came at Marvel Comics in the late 1980s, culminating in his co-writing and illustrating *X-Men* Vol. 2 #1 in 1991, which remains the best-selling single comic issue of all time (over 8 million copies).
+                    </p>
+                    <p>
+                        Driven by a desire for creator ownership, Lee co-founded **Image Comics** in 1992 and established his own studio, WildStorm Productions, launching popular titles like *WildC.A.T.s* and *Gen¹³*. After selling WildStorm to DC Comics in 1998, Lee became an exclusive DC artist, producing acclaimed runs such as *Batman: Hush* and *Superman: For Tomorrow*. He was a driving force behind the *New 52* initiative, redesigning the core DC cast. Today, Lee serves as the President, Publisher, and Chief Creative Officer of DC Comics, continuing to shape the company both creatively and corporately.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">On Finding the Path to Comics</h3>
+                    <!-- Video summary paragraph -->
+                    <p class="mb-6 text-gray-700">In this segment, Jim Lee speaks candidly about the intense pressure he faced from his Korean immigrant parents to follow his father into medicine, viewing it as the path to security. He discusses how comics, especially **Superman** (the ultimate immigrant), provided sanctuary and helped him assimilate into American culture as a child. He recounts graduating from Princeton and making a high-stakes deal with his family to dedicate just one year to achieving his dream of being a professional comic book artist. He committed to drawing eight to ten hours a day, often battling physical soreness, eventually proving his dedication to himself and his parents, a commitment he attributes as essential to his subsequent success.</p>
+
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID wywU0K8BTME and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/wywU0K8BTME" 
+                            title="How Jim Lee became a comic legend" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
