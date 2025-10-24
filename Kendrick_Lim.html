@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Kendrick "Kunkka" Lim</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                KENDRICK "KUNKKA" LIM
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/5o5PmEo.jpeg" 
+                        alt="Profile image of Kendrick Lim" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">Kendrick Lim</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Illustrator, Concept Artist, Cover Artist</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">~2005 (Imaginary Friends Studios)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Co-Founder of <b>Imaginary Friends Studios</b></span></li>
+                                <li><span id="work-2">Cover Artist for <b>Marvel</b> (Carnage, Venom) & <b>DC</b> (Harley Quinn)</span></li>
+                                <li><span id="work-3">Iconic art for <b>Defense of the Ancients (DotA)</b></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        Kendrick Lim, known professionally as "Kunkka," is a highly influential illustrator and concept artist who seamlessly bridges the gap between video game art and comic book covers. He began his creative career as a game designer in Tokyo before co-founding **Imaginary Friends Studios (IFS)** in 2005 alongside artists <b>Stanley Lau</b> and **Kai Lim**. IFS quickly established itself as a premier art studio in Asia, producing art for major clients across the gaming, film, and comic industries, including Sony Online Entertainment, Capcom, Square-Enix, and DC Comics.
+                    </p>
+                    <p>
+                        Kunkka gained immense popularity and acclaim within the gaming community for his dynamic loading screen artwork and official contributions to the <b><i>Defense of the Ancients (DotA)</i></b> game series, where his work earned him the high honor of having an official in-game hero, **Admiral Kunkka**, named after him.
+                    </p>
+                    <p>
+                        In the comic industry, Kunkka is renowned for his detailed and painterly cover illustrations, contributing highly sought-after variant covers to major publishers. He has worked extensively with Marvel, drawing characters like **Carnage**, **Venom**, **Wolverine**, and **Ghost Rider**, and with DC, featuring on titles such as <b><i>Harley Quinn</i></b>, **Batman**, and **Poison Ivy**. His style is characterized by high energy, detailed rendering, and a fusion of Western comic sensibilities with Asian illustration aesthetics.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description provided by the user (general topic implied from title) -->
+                    <p class="mb-6 text-gray-700">In this short spotlight, **Kendrick "Kunkka" Lim** discusses his experience with the art marketplace platform Raremarq. He notes that the service helps him sell and share his original comic and illustration work—including pieces featuring Marvel and DC characters—with a global audience, likening the streamlined, transparent process to using consumer apps like Uber and Amazon.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID GoIwvnvXndo and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/GoIwvnvXndo" 
+                            title="Why Kunkka (Marvel, DC, Image Comics) Recommends Raremarq to Creators" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
