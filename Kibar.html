@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Kibar</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                KIBAR
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/apxIlgh.png" 
+                        alt="Profile image of Kibar" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">France (Active since 2019)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Illustrator, Cover Artist</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">2019 (Paris Comic Con Finalist)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Cover Artist for <b>Image Comics</b> (Spawn, King Spawn)</span></li>
+                                <li><span id="work-2">Realist style often using black paper commissions</span></li>
+                                <li><span id="work-3">DC FanDome Selection (Zack Snyder's Justice League poster)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        **Kibar** is a French illustrator and cover artist who rose to prominence quickly in the comics scene, marked by his distinctively realistic and high-contrast digital painting and traditional colored pencil work. His exposure began in 2019 when he was a finalist in the Paris Comic Con young artist competition for his **"Long Live Batman"** cover. The following year, his poster tribute to **Zack Snyder's Justice League** was selected for DC FanDome, signaling his emerging talent.
+                    </p>
+                    <p>
+                        Kibar's artistic style is characterized by a "generous" realism that is highly appealing to superhero fans, often employing a heavy contrast between light and shadow. He frequently works on black sheets of paper for his commissions, allowing him to dramatically deepen reliefs and mark the highlights on characters like **Batman** and **Joker**.
+                    </p>
+                    <p>
+                        His primary professional work involves creating official covers for <b>Todd McFarlane's</b> Image Comics titles, including **<i>Spawn</i>**, **<i>King Spawn</i>**, and **<i>Violator: Origins</i>**. During interviews, he has discussed how McFarlane personally reached out after seeing his fan art, leading to his ongoing work on the Spawn Universe. He is influenced by the painted realism of **Alex Ross** and the dynamic compositions of artists like **Gabriel Dell’Otto** and the **Romita family** (Sr. and Jr.).
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description provided by the user (general topic implied from title) -->
+                    <p class="mb-6 text-gray-700">In this episode, cover artist <b>Kibar</b> discusses his career trajectory—from fan artist in France to working for <b>Todd McFarlane</b> on <b><i>Spawn</i></b>. He talks about the serendipitous story of McFarlane messaging him directly, the creative process behind his detailed and dramatic covers, and his aspirations to draw more characters from the DC and Marvel universes, such as **Superman** and **Spider-Man**.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID VJfBKTNwdj4 and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/VJfBKTNwdj4" 
+                            title="Comic Crusaders Podcast #399 - KIBAR" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
