@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Larry Lieber</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                LARRY LIEBER
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/rM1Aynl.jpeg" 
+                        alt="Profile image of Larry Lieber" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">c. 1930 (Younger brother of Stan Lee)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Writer, Artist, Co-Creator, Scripter</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1951 (All True Crime #44)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Co-Creator of <b>Thor</b>, <b>Iron Man</b>, and <b>Ant-Man</b></span></li>
+                                <li><span id="work-2">Co-Created the name <b>Uru</b> (for Mjolnir)</span></li>
+                                <li><span id="work-3">Longest-running artist on <b><i>The Amazing Spider-Man</i></b> newspaper strip</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        <b>Larry Lieber</b> is an American comic book writer and artist whose foundational contributions during the Silver Age helped establish the modern <b>Marvel Universe</b>. As the younger brother of <b>Stan Lee</b>, he began working as an art assistant in the late 1940s and served in the US Air Force before dedicating himself to comics full-time in the 1950s.
+                    </p>
+                    <p>
+                        He is perhaps best known for his critical scripting and creative work alongside <b>Jack Kirby</b> on some of Marvel’s most iconic heroes. Lieber co-created both <b>Thor</b> (first appearance in <b><i>Journey Into Mystery</i> #83</b>) and <b>Iron Man</b> (first appearance in <b><i>Tales of Suspense</i> #39</b>), giving them their civilian identities as <b>Donald Blake</b> and <b>Anthony Stark</b>. He also co-created <b>Ant-Man (Hank Pym)</b>. Furthermore, he inadvertently created the magical metal <b>Uru</b> (used for Mjolnir) simply by devising a short, exotic-sounding word the letterer could easily fit on the page.
+                    </p>
+                    <p>
+                        Lieber’s career also saw a long run both writing and drawing the Western comic <b><i>Rawhide Kid</i></b>, and he holds the record as the longest-running contributor, both writing and drawing, the syndicated <b><i>The Amazing Spider-Man</i></b> newspaper comic strip from 1986 until his retirement from penciling in 2018. In his later career, he achieved a lifelong goal of writing original prose with the publication of his novel, <b><i>Chirps</i></b>.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description provided by the user (general topic implied from title) -->
+                    <p class="mb-6 text-gray-700">In this highly personal interview, <b>Larry Lieber</b> reflects on his career, including how his perceived slowness led his brother <b>Stan Lee</b> to offer him the freedom to work on <b><i>Rawhide Kid</i></b>. He shares the charming story behind creating the term <b>"Uru"</b> and the personal motivation for writing his novel, <b><i>Chirps</i></b>, which helped him process grief after his wife's passing. Lieber discusses the creative freedom of writing his own prose compared to the collaborative nature of comics.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID uCQuZfCKopo and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/uCQuZfCKopo" 
+                            title="Marvel Legend Larry Lieber Tells All – Thor, Uru, Grief, and the Parakeet That Saved Him" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
