@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Mitch Gerads</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+        /* Added max-height for image container to ensure consistent sizing */
+        .image-container {
+            /* Set a consistent max-height for the portrait images */
+            max-height: 400px; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            /* Ensure the image fills the container height and crops content if necessary */
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                MITCH GERADS
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <!-- Applied new image-container class for max height control -->
+                <div class="rounded-lg overflow-hidden shadow-md image-container">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/WinRe3W.jpeg" 
+                        alt="Profile image of Mitch Gerads" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">United States</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Illustrator, Artist, Sequential Storyteller</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">2011 (Image Comics' <b><i>The Activity</i></b>)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1"><b><i>Mister Miracle</i></b> (Eisner Award winner, DC)</span></li>
+                                <li><span id="work-2"><b><i>The Sheriff of Babylon</i></b> (DC Vertigo)</span></li>
+                                <li><span id="work-3"><b><i>Batman: The War of Jokes and Riddles</i></b> (DC)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        <b>Mitch Gerads</b> is an Eisner and Ringo Award-winning American illustrator known for his dynamic, realistic art style that excels at injecting profound humanity into the fantastic narratives of superhero comics. His work is characterized by a strong sense of mood, atmosphere, and a masterful use of page layout that often emphasizes nine-panel grids for powerful sequential storytelling.
+                    </p>
+                    <p>
+                        Gerads began his comics career in the independent space with <b><i>The Activity</i></b> (Image Comics) and later gained recognition for his run on Marvel's <b><i>The Punisher</i></b>. However, he is best known for his highly celebrated and critically acclaimed partnership with writer **Tom King**. This collaboration began with the hard-hitting military drama, <b><i>The Sheriff of Babylon</i></b> (DC Vertigo), and led to defining work on major DC titles.
+                    </p>
+                    <p>
+                        Their seminal work on the 12-issue limited series <b><i>Mister Miracle</i></b> earned Gerads an Eisner Award for Best Limited Series. This series is often cited as a modern masterpiece for its nuanced portrayal of mental health and domestic life juxtaposed with Jack Kirby’s cosmic New Gods mythology. Gerads continues to work on prominent DC events, including the recent <b><i>Strange Adventures</i></b> and <b><i>Batman: One Bad Day</i></b> titles.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description based on search results and title -->
+                    <p class="mb-6 text-gray-700">In this interview, the celebrated artist <b>Mitch Gerads</b> discusses his comic book journey, his philosophy on finding new creative challenges after achieving his dream project of drawing <b>Batman</b>, and the advice he offers to aspiring creators about hard work and persistence in the demanding comic book industry.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID 4bw53a4ql94 and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/4bw53a4ql94" 
+                            title="TheXLTE part 2 interviews Mitch Gerads Comic Illustrator May 24th 2024" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
