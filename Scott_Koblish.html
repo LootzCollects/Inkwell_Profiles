@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Scott Koblish</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+        /* Added max-height for image container to ensure consistent sizing */
+        .image-container {
+            /* Set a consistent max-height for the portrait images */
+            max-height: 400px; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            /* Ensure the image fills the container height and crops content if necessary */
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                SCOTT KOBLISH
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <!-- Applied new image-container class for max height control -->
+                <div class="rounded-lg overflow-hidden shadow-md image-container">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/FvB5jeW.png" 
+                        alt="Profile image of Scott Koblish" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">May 28, 1970 (New York, U.S.)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Artist, Penciller, Inker, Writer</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1993 (Marvel Comics - Romita Raiders)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Six-year run as penciller/inker on <b><i>Deadpool</i></b> (co-creator of <b>Deadpool 2099</b>).</span></li>
+                                <li><span id="work-2">Guinness World Record for most characters on a comic cover (<b><i>Deadpool</i></b> #27).</span></li>
+                                <li><span id="work-3">Inker on <b><i>Final Crisis: Legion of 3 Worlds</i></b> and artist on <b><i>The Many Deaths of Scott Koblish</i></b>.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        <b>Scott Koblish</b> is an accomplished American comic book artist, inker, and writer who has worked on over 600 comics for major publishers. Koblish trained at <b>The Joe Kubert School</b> and the <b>School of Visual Arts</b> before beginning his career as part of <b>Marvel's</b> renowned **Romita Raiders** apprenticeship program under <b>John Romita Sr.</b> in 1993.
+                    </p>
+                    <p>
+                        Initially establishing himself as a reliable inker on titles like <b><i>G.I. Joe</i></b>, <b><i>The Punisher</i></b>, and <b>DC's</b> <b><i>OMAC</i></b>, Koblish gained his greatest fame for his six-year run as the primary artist on **Marvel's** flagship <b><i>Deadpool</i></b> series. His ability to render vast, intricate scenes culminated in securing the <b>Guinness World Record</b> for the most characters ever depicted on a single comic book cover with <b><i>Deadpool</i></b> #27. This era also saw him co-create the character <b>Deadpool 2099</b>.
+                    </p>
+                    <p>
+                        Known for his chameleon-like skill, Koblish can seamlessly adapt his style to suit different genres and eras, often paying homage to classic comic art. His versatility shines in projects ranging from his celebrated inking over <b>George Pérez</b> on <b><i>Final Crisis: Legion of 3 Worlds</i></b> to his creator-owned cartoon strip, **<i>The Many Deaths of Scott Koblish</i>**, a satirical look at the artist's own mortality. Koblish is highly regarded for his strong sequential storytelling, dynamic compositions, and ability to weave humor into intense action scenes.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description based on search results and title -->
+                    <p class="mb-6 text-gray-700">In this panel interview, <b>Scott Koblish</b> discusses his training under legends like <b>Joe Kubert</b> and <b>Will Eisner</b>, and his unique start in the industry with the <b>Romita Raiders</b>. He shares insights into the meticulous process of designing and drawing his massive <b>Deadpool</b> covers, highlighting the influence of his early art instruction on his current approach to sequential art.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID ZRnMByHPUHE and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/ZRnMByHPUHE" 
+                            title="Comic Art LIVE Fall 2025 Panel - Scott Koblish Interview" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
