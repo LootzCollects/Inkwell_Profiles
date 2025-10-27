@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Michael Golden</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+        /* Added max-height for image container to ensure consistent sizing */
+        .image-container {
+            max-height: 400px; /* Adjust as needed for visual balance */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                MICHAEL GOLDEN
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <!-- Applied new image-container class for max height control -->
+                <div class="rounded-lg overflow-hidden shadow-md image-container">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/h19dyeM.jpeg" 
+                        alt="Profile image of Michael Golden" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">Late 1940s (American)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Artist, Writer, Cover Designer, Senior Art Director (Marvel)</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">Late 1977 (DC Comics - <b><i>House of Secrets</i></b>)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Co-creator of the X-Men character <b>Rogue</b></span></li>
+                                <li><span id="work-2">Defining runs on <b><i>The Micronauts</i></b> and <b><i>The 'Nam</i></b></span></li>
+                                <li><span id="work-3">Co-creator of <b>Bucky O'Hare</b></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        <b>Michael Golden</b> is a highly acclaimed American comic book artist and writer whose distinctive, dynamic style emerged in the late 1970s and influenced an entire generation of artists, notably the original founders of Image Comics (including Todd McFarlane and Arthur Adams). His career began in late 1977 with DC Comics on titles like <b><i>Mister Miracle</i></b> and anthology horror books before he moved to Marvel.
+                    </p>
+                    <p>
+                        Golden is renowned for his influential runs on Marvel's <b><i>The Micronauts</i></b> and later, the gritty Vietnam War series <b><i>The 'Nam</i></b>. A consummate creator, he co-created the incredibly popular character <b>Rogue</b> in <b><i>Avengers Annual</i> #10</b> (1981) with writer Chris Claremont, solidifying his legacy in the Marvel Universe. He also co-created the anthropomorphic space opera character <b>Bucky O'Hare</b>.
+                    </p>
+                    <p>
+                        Beyond his interior and cover work on properties like <b><i>G.I. Joe</i></b>, <b><i>Rom</i></b>, and <b><i>Doctor Strange</i></b>, Golden also served in executive roles within the industry, including as an <b>Editor at DC Comics</b> in the early 1990s and later as a <b>Senior Art Director at Marvel Comics</b>, shaping the visual direction of both companies. He is recognized worldwide as one of the best cover designers and illustrators in the business.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description based on search results and title -->
+                    <p class="mb-6 text-gray-700">In this panel discussion, <b>Michael Golden</b> reflects on his career, his work on iconic titles like <b><i>The Micronauts</i></b> and <b><i>The 'Nam</i></b>, and his experience serving as both a Senior Editor at DC and Senior Art Director at Marvel. He discusses the foundational influences that shaped his unique and enduring art style.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID B9aGXJlWF6U and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/B9aGXJlWF6U" 
+                            title="Comic Creator MICHAEL GOLDEN Panel – Fandemic Dead 2022" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
