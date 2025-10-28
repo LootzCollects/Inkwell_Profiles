@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publisher and Visionary of Image Comics | Todd McFarlane</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+        /* Added max-height for image container to ensure consistent sizing */
+        .image-container {
+            /* Set a consistent max-height for the portrait images */
+            max-height: 400px; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            /* Ensure the image fills the container height and crops content if necessary */
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                TODD MCFARLANE
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Publisher and Visionary of Image Comics</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <!-- Applied new image-container class for max height control -->
+                <div class="rounded-lg overflow-hidden shadow-md image-container">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/Aw6taL5.jpeg" 
+                        alt="Profile image of Todd McFarlane" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">March 16, 1961 (Calgary, Canada)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Artist, Writer, Publisher, Entrepreneur</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1984 (<b>Marvel Comics</b>, <b><i>Scorpio Rose</i></b>)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Co-founder and President of <b>Image Comics</b>; founder of <b>McFarlane Toys</b>.</span></li>
+                                <li><span id="work-2">Creator of the best-selling independent comic, <b><i>Spawn</i></b>.</span></li>
+                                <li><span id="work-3">Influential run on <b><i>The Amazing Spider-Man</i></b>, co-creating <b>Venom</b>.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        <b>Todd McFarlane</b> is one of the most influential and successful figures in modern comic book history, known for transforming the industry both artistically and professionally. After suffering a career-ending injury in baseball, McFarlane turned his full attention to comics, persevering through over 700 rejection letters before landing his first assignment in 1984.
+                    </p>
+                    <p>
+                        He achieved superstar status at <b>Marvel Comics</b> in the late 1980s for his work on <b><i>The Incredible Hulk</i></b> and, most famously, <b><i>The Amazing Spider-Man</i></b>. On <b><i>Spider-Man</i></b>, McFarlane redesigned the web-slinger with larger eyes and dynamic, spaghetti-like webbing, visually defining the character for a new generation. He is credited as the co-creator and designer of the iconic anti-hero <b>Venom</b>. His first issue writing and drawing his own title, simply titled <b><i>Spider-Man</i></b> #1 (1990), sold a record-breaking 2.5 million copies.
+                    </p>
+                    <p>
+                        In 1992, frustrated with the lack of creator rights and ownership at established publishers, McFarlane and six other star artists co-founded <b>Image Comics</b>. His studio, <b>Todd McFarlane Productions</b>, launched <b><i>Spawn</i></b>, an occult horror anti-hero he had created in high school. <b><i>Spawn</i></b> #1 sold an unprecedented 1.7 million copies, becoming the best-selling independent comic of all time. McFarlane later founded <b>McFarlane Toys</b>, securing creative control over his character merchandise and expanding his empire into a major entertainment and collectibles force.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description based on search results and title -->
+                    <p class="mb-6 text-gray-700">In this panel interview, <b>Todd McFarlane</b> shares his personal journey, detailing his ambitious career as a comics creator, the move that led him to co-found <b>Image Comics</b>, and his commitment to putting in the hard work necessary to chase the creative dream.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID _6OKSSpOvTg and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/_6OKSSpOvTg" 
+                            title="Todd McFarlane on His First Comic-Con and Chasing the Dream" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
