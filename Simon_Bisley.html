@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Professional Profile | Simon Bisley</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles using Lootz Collectibles colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ECECEC; /* User's preferred light gray background */
+        }
+        
+        /* Custom style to make the list bullets match the secondary accent color */
+        .list-disc-accent ul {
+            list-style-type: disc;
+        }
+        .list-disc-accent li::marker {
+            color: #b6b733; /* Olive Green Accent */
+        }
+        /* Added max-height for image container to ensure consistent sizing */
+        .image-container {
+            /* Set a consistent max-height for the portrait images */
+            max-height: 400px; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            /* Ensure the image fills the container height and crops content if necessary */
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Card: Centered and constrained -->
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Header Banner: Deep Burgundy Background with Gold Accent -->
+        <header class="p-6 bg-[#541809] text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                SIMON BISLEY
+            </h1>
+            <!-- Primary Gold Accent - Subtitle updated to be generic -->
+            <p class="text-[#e89b23] mt-1">Comic Book Professional</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Image and Key Facts (25% width on desktop) -->
+            <div class="md:col-span-4 space-y-6">
+                
+                <!-- Artist Image -->
+                <!-- Applied new image-container class for max height control -->
+                <div class="rounded-lg overflow-hidden shadow-md image-container">
+                    <img 
+                        id="artist-image"
+                        src="https://i.imgur.com/JKHjpOG.jpeg" 
+                        alt="Profile image of Simon Bisley" 
+                        class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/500x500/1e293b/ffffff?text=Photo+Unavailable';"
+                    >
+                </div>
+
+                <!-- Key Information Section: Using the Lightest Brand Color as Background -->
+                <div class="bg-[#fef385] p-4 rounded-lg shadow-inner">
+                    <!-- Title using Primary Gold Accent -->
+                    <h3 class="text-xl font-semibold mb-3 text-[#e89b23] border-b pb-2">Key Facts</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <!-- Strong text using Deep Burgundy -->
+                        <li><strong class="text-[#541809]">Born:</strong> <span id="fact-born">March 4, 1962 (England, U.K.)</span></li>
+                        <li><strong class="text-[#541809]">Field:</strong> <span id="fact-field">Painter, Artist, Illustrator</span></li>
+                        <li><strong class="text-[#541809]">Debut:</strong> <span id="fact-debut">1987 (<b><i>2000 AD</i></b> - <b><i>ABC Warriors</i></b>)</span></li>
+                        <li><strong class="text-[#541809]">Notable Works:</strong> 
+                            <!-- Apply custom class for colored list discs -->
+                            <ul class="ml-4 list-disc list-inside list-disc-accent">
+                                <li><span id="work-1">Iconic redesign and art on <b>Lobo</b> mini-series (<b>DC Comics</b>).</span></li>
+                                <li><span id="work-2">Fully painted work on <b><i>Sláine: The Horned God</i></b> and <b><i>ABC Warriors</i></b> (<b><i>2000 AD</i></b>).</span></li>
+                                <li><span id="work-3">Frequent contributor to <b><i>Heavy Metal</i></b> magazine and art director on the <b><i>Witchblade</i></b> film.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Biography (75% width on desktop) -->
+            <div class="md:col-span-8">
+                <!-- Biography Header using Deep Burgundy -->
+                <h2 class="text-3xl font-bold mb-4 text-[#541809]">Biography & Influence</h2>
+                
+                <!-- --- START: BIOGRAPHY CONTENT --- -->
+                
+                <div id="biography-content" class="space-y-6 text-gray-700 leading-relaxed text-lg">
+                    <p>
+                        <b>Simon Bisley</b> is a British comic book artist renowned for his unique, aggressive, and highly kinetic painted style, which blended influences from <b>Frank Frazetta</b>, graffiti art, and heavy metal album covers. Largely self-taught, he began his professional career with the iconic British magazine <b><i>2000 AD</i></b> in 1987, starting on the <b><i>ABC Warriors</i></b> strip.
+                    </p>
+                    <p>
+                        Bisley's rise to international fame was secured by his fully painted work on <b><i>Sláine: The Horned God</i></b> and his defining artistic reinvention of <b>DC Comics' Lobo</b>. Initially a minor character, Bisley transformed Lobo into the monstrous, muscular, leather-clad biker seen in the successful early 1990s miniseries like <b><i>Lobo: The Last Czarnian</i></b> and <b><i>Lobo's Back</i></b>, making him an anarchic counter-cultural icon of the era. Reflecting on this period, Bisley stated he felt a deep personal connection, saying, "I didn't just create Lobo, I was Lobo!" at the time, channeling his own wild lifestyle into the character's excess and violence.
+                    </p>
+                    <p>
+                        His dynamic, mixed-media work led him to illustrate the first major crossover graphic novel, <b><i>Batman/Judge Dredd: Judgement on Gotham</i></b>, and he remains a perennial influence, with his style inspiring characters in media like the <b>BBC's</b> <b><i>Doctor Who</i></b> and the main character in the sitcom <b><i>Spaced</i></b>.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4 text-[#541809]">Interview & Commentary</h3>
+                    <!-- Video description based on search results and title -->
+                    <p class="mb-6 text-gray-700">In this long-form interview, <b>Simon Bisley</b> discusses his origins at <b><i>2000 AD</i></b>, the artistic influences that shaped his distinctive painted style (including <b>Frank Frazetta</b> and <b>Salvador Dalí</b>), and the process behind his seminal work on <b><i>Sláine: The Horned God</i></b> and his career-defining transformation of the <b>DC Comics</b> character <b>Lobo</b>.</p>
+                    
+                    <!-- RESPONSIVE YOUTUBE EMBED - Using video ID gJZDYCeVcpc and youtube-nocookie -->
+                    <div class="aspect-w-16 aspect-h-9 relative w-full rounded-lg overflow-hidden shadow-xl" style="aspect-ratio: 16 / 9;">
+                        <iframe 
+                            class="w-full h-full absolute inset-0" 
+                            src="https://www.youtube-nocookie.com/embed/gJZDYCeVcpc" 
+                            title="EXCLUSIVE Simon Bisley interview - The 2000 AD Creator Tapes" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- --- END: BIOGRAPHY CONTENT --- -->
+
+                <!-- Contact/Link Footer (Optional) -->
+                <div class="mt-8 pt-4 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        *Note: The information provided is a free service provided by Lootz Collectibles for comic book fans and does not constitute endorsement for Lootz Collectibles, its products, or brand by any of the people shown within The Inkwell. Any person NOT wishing to be shown within The Inkwell is welcome to contact Lootz Collectibles and ask for removal at <a href="mailto:lootzcollectibles@gmail.com" class="text-[#e89b23] hover:underline">lootzcollectibles@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
